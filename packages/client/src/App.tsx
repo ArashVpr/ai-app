@@ -9,7 +9,6 @@ function App() {
          .then((res) => res.json())
          .then((data) => setMessage(data.message));
    }, []);
-
    return (
       <div className="p-4">
          <p className="text-blue-500 font-bold">{message}</p>
